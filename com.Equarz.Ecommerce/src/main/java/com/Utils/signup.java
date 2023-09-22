@@ -7,16 +7,15 @@ import java.io.IOException;
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.annotations.DataProvider;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.DataProvider;
-
-import com.base.Testbase;
-public class Utils extends Testbase {
+public class signup {
 @DataProvider
 	
 	public String[][] setdata() throws IOException
 	{
-		File file=new File("C:\\Users\\Sivalakshmi\\git\\Eccomerce_Project\\com.Equarz.Ecommerce\\src\\main\\java\\com\\testdata\\login credentials.xlsx");
+		File file=new File("C:\\Users\\Sivalakshmi\\git\\Eccomerce_Project\\com.Equarz.Ecommerce\\src\\main\\java\\com\\testdata\\signup credentials.xlsx");
 		FileInputStream stream=new FileInputStream(file);
 		XSSFWorkbook workbook=new XSSFWorkbook(stream);
 		XSSFSheet sheet=workbook.getSheetAt(0);
@@ -39,3 +38,8 @@ public class Utils extends Testbase {
 		return data;	
 	}
 }
+
+	
+	
+	
+
