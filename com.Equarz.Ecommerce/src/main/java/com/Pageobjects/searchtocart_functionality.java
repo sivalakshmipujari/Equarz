@@ -4,9 +4,8 @@ package com.Pageobjects;
 	import org.openqa.selenium.WebElement;
 	import org.openqa.selenium.support.FindBy;
 	import org.openqa.selenium.support.PageFactory;
-
-	import com.base.Homepage;
-import com.base.Testbase;
+    import com.base.Homepage;
+    import com.base.Testbase;
 
 	public class searchtocart_functionality extends Testbase{
 		@FindBy(xpath="//input[@class='form-control appended-form-control search-bar-input']")
@@ -25,17 +24,25 @@ import com.base.Testbase;
 		public Homepage validateProduct1() throws InterruptedException
 		{
 			//popclose.click();
+			//search.sendKeys( object).getProperty("Product"));
 			search.sendKeys(((Object) props).getProperty("Product"));
 			searchbtn.click();
             addtocart.click();
 			return new Homepage();
 		}
-		
-		
-
 	}
+		
+		
+
+	
 
 
 
 
-
+	
+	
+	
+	
+	
+	
+	
