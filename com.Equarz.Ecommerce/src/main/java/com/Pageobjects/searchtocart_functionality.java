@@ -25,7 +25,7 @@ package com.Pageobjects;
 		{
 			//popclose.click();
 			//search.sendKeys( object).getProperty("Product"));
-			search.sendKeys(((Object) props).getProperty("Product"));
+			search.sendKeys ("laptop");
 			searchbtn.click();
             addtocart.click();
 			return new Homepage();
