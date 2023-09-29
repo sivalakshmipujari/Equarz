@@ -1,5 +1,11 @@
 package com.Equarz.Testcases;
-	import org.testng.Assert;
+	import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+
+import java.sql.Driver;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 	import org.testng.annotations.AfterMethod;
 	import org.testng.annotations.BeforeMethod;
 	import org.testng.annotations.Test;
@@ -9,6 +15,7 @@ package com.Equarz.Testcases;
 		
 
 			Bannertocart pf1;
+			private Bannertocart pf;
 			
 				
 				 Bannertocart()
@@ -16,22 +23,24 @@ package com.Equarz.Testcases;
 						
 					super();
 				}
+				
 				@BeforeMethod
 				public void initialize()
 				{
 					
 					Setup();
-					pf1=new Bannertocart ();
-					
+					pf=new Bannertocart(Driver);					
 				}
 				@Test
 				public void verifyurl() throws InterruptedException
 				{
-					((Object) pf1).validateProduct14();
+				 pf1.validateProduct14();
 					String url=driver.getCurrentUrl();
-					Assert.assertEquals("http://e-quarz.com/product/jodhpuri-blazer-for-men-black-formal-casual-svSGUX", url);
+					AssertJUnit.assertEquals("http://e-quarz.com/product/jodhpuri-blazer-for-men-black-formal-casual-svSGUX", url);
 				}
 				
+				
+					
 				
 				@AfterMethod
 				public void teardown()

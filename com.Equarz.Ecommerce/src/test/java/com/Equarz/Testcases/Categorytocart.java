@@ -26,7 +26,7 @@ import org.testng.Assert;
 			@Test
 			public void verifyurl() throws InterruptedException
 			{
-				((Object) pf).validateProduct();
+				 pf.validateProduct();
 				String url=driver.getCurrentUrl();
 				Assert.assertEquals("http://e-quarz.com/product/panasonic-20l-solo-microwave-oven-nn-st26jmfdg-silver-51-auto-menus-C81NSM", url);
 			}
