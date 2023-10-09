@@ -9,7 +9,7 @@ package com.Equarz.Testcases;
 	import com.Pageobjects.Signupfunctionality;
 	import com.base.Testbase;
 
-	public class Signup extends Testbase{
+	public class Signuptest extends Testbase{
 		
 			
 			Signupfunctionality sf;
@@ -31,7 +31,7 @@ package com.Equarz.Testcases;
 				
 			}
 			@Test
-			(dataProvider = "setdata",dataProviderClass = Signup.class)
+			(dataProvider = "setdata",dataProviderClass = Signuptest.class)
 			public void verifyurl(String firstname,String lastname,String Email,String phone,String password,String cpassword) throws InterruptedException
 			{
 				sf.validateSignup(firstname,lastname,Email,phone,password,cpassword);
