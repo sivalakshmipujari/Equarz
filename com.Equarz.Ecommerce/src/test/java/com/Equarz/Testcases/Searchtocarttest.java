@@ -29,11 +29,10 @@ package com.Equarz.Testcases;
 		@Test
 		public void verifyurl() throws InterruptedException
 		{
-			  pf1.validateProduct();
+			   pf1.validateProduct();
 			String url=Driver.getCurrentUrl();
 			Assert.assertEquals("http://e-quarz.com/product/hp-laptop-15-amd-ryzen-3-7320u-156-inch396cm-fhd-micro-edge-laptop8gb-ram512gb-ssdamd-radeon-graphicsdual-speakersalexan", url);
 		}
-		
 		
 		@AfterMethod
 		public void teardown()
