@@ -219,11 +219,7 @@ package com.Pageobjects;
 //			String url=driver.getCurrentUrl();
 //			assertEquals("https://www.facebook.com/", url);
 		}
-			
-			
-			
-			
-		}
+			}
 
 
 
