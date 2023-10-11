@@ -22,7 +22,7 @@ import com.base.Testbase;
 				
 				Setup();
 				lg= new Login_Functionality(driver);
-				lg.validateLogin();
+				lg.Verifylogin();
 				//lg.validateLogin(props.getProperty("username"),props.getProperty("password"));
 				 wl = new wishlist(driver);
 			}
