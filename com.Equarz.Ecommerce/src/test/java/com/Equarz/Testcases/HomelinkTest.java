@@ -22,7 +22,7 @@ package com.Equarz.Testcases;
 			super();
 		}
 		@BeforeClass
-		public void login()
+		public void login() throws InterruptedException
 		{
 			Setup();
 			lg=new Login_Functionality(driver);
@@ -162,4 +162,4 @@ package com.Equarz.Testcases;
 	}
 
 
-}
+
