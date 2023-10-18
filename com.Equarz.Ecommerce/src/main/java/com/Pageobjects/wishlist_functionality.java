@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.testdata.Testdata;
 
-public class wishlist extends Testdata {
+public class wishlist_functionality extends Testdata {
 	@FindBy(xpath=" (//span[text()='Books'])[1]")
 	WebElement category;
 	@FindBy(xpath="(//span[text()='School text books'])[1]")                    //FROM CATEGORY
@@ -38,7 +38,7 @@ public class wishlist extends Testdata {
 	WebElement homeproduct;
 	private WebDriver driver;
 	
-	public wishlist (WebDriver driver) {
+	public wishlist_functionality (WebDriver driver) {
 		
 		PageFactory.initElements(driver, this);
 	}

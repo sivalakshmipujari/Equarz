@@ -26,7 +26,7 @@ package com.Pageobjects;
 		{
 			PageFactory.initElements(driver, this);
 		}
-		public Homepage validateLogin() throws InterruptedException
+		public Homepage  validateLogin() throws InterruptedException
 		{
 			user.sendKeys(props.getProperty("username"));
 			pass.sendKeys(props.getProperty("password"));
@@ -39,15 +39,6 @@ package com.Pageobjects;
 			
 		}
 		
-		
-		
-		
-		
-		
-
-		
-
-		
-	}
+}
 
 
