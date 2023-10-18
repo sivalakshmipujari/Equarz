@@ -5,12 +5,12 @@ package com.Equarz.Testcases;
 	import org.testng.annotations.Test;
 
 	import com.Pageobjects.Login_Functionality;
-import com.Pageobjects.wishlist;
+import com.Pageobjects.wishlist_functionality;
 import com.base.Testbase;
 
 	public class wishlisttest extends Testbase {
 			
-			wishlist wl;
+			wishlist_functionality wl;
 			Login_Functionality lg;
 			
 			public wishlisttest() {
@@ -24,13 +24,14 @@ import com.base.Testbase;
 				lg= new Login_Functionality(driver);
 				lg.Verifylogin();
 				//lg.validateLogin(props.getProperty("username"),props.getProperty("password"));
-				 wl = new wishlist(driver);
+				 wl = new wishlist_functionality(driver);
 			}
 			@Test
 			public void categorywishlist() 
 			{
 				wl.categorylist();
 			}
+			
 			@Test
 			public void bannerwishlist() 
 			{

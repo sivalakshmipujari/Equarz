@@ -9,7 +9,7 @@ package com.Equarz.Testcases;
 
 	import com.Pageobjects.Homelink_Functionality;
 	import com.Pageobjects.Login_Functionality;
-	import com.Pageobjects.Search_Functionality;
+	import com.Pageobjects.searchtocart_functionality;
 	import com.base.Testbase;
 
 	public class HomelinkTest extends Testbase {
@@ -29,6 +29,7 @@ package com.Equarz.Testcases;
 			lg.validateLogin();
 			
 		}
+		
 		@BeforeMethod
 		public void initialize() 
 		{
@@ -152,14 +153,7 @@ package com.Equarz.Testcases;
 		{
 			//driver.close();
 		}
-
-		
-		
-		
-		
-		
-
-	}
+}
 
 
 
