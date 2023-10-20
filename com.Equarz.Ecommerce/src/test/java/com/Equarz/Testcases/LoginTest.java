@@ -46,10 +46,6 @@ package com.Equarz.Testcases;
 		{
 			//driver.close();
 		}
-
-
-
-
-	}
+}
 
 
